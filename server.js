@@ -42,4 +42,8 @@ app.all('*', function(req, res) {
     }
 });
 
-module.exports = app;
+const serverPort = 8001;
+
+app.listen(serverPort, () => {
+    console.log(`Server is now running at port ${serverPort}...`);
+});
